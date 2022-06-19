@@ -5,7 +5,6 @@ import Utils.RestUtil;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.rules.TestName;
 
 import java.nio.file.Files;
@@ -97,7 +96,7 @@ public class Base extends RestUtil{
     @Rule 
 	public TestName name = new TestName();
     
-	@Before
+	//@Before
     public void initT(){
         //api.setBaseURL();
         getToken();

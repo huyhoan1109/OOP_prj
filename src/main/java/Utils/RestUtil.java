@@ -10,11 +10,14 @@ public class RestUtil {
 	private static JSONObject json;
 	private static String baseURL = "https://auctions-app-2.herokuapp.com/api";
 //	private static String baseURL = "https://auctions-admin-2.herokuapp.com";
+	public String getRest() {
+		return RestAssured.baseURI + "/" + RestAssured.basePath;
+	}
 	public void setBaseURL() {
 		RestAssured.baseURI = baseURL;
 	}
     public static void setBaseURL(String URL){
-    	if(URL == "") {
+    	if(URL.equals("")) {
             RestAssured.baseURI = baseURL;
     	}
     	else {

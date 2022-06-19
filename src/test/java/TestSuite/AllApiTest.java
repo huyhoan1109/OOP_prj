@@ -8,9 +8,7 @@ import Utils.*;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-//	SignUp.class,
 	Login.class,
-//	EditAccount.class,
 	Logout.class,
 }) 
 public class AllApiTest {
