@@ -22,12 +22,12 @@ public class RunApi {
     	String url_c = "";
     	String choice = "";
         do {
-        	System.out.println("-------------------------");
+        	System.out.println("--------------------------------------");
         	System.out.println("1: Load baseUrl");
-        	System.out.println("2: Run one");
-        	System.out.println("3: Run all");
+        	System.out.println("2: Run a unit test of an assigned API");
+        	System.out.println("3: Run all test of an assigned API");
         	System.out.println("0: Exit");
-        	System.out.println("-------------------------");
+        	System.out.println("--------------------------------------");
         	System.out.print("Your choice: ");
 			Scanner sc = new Scanner(System.in);
         	choice = sc.nextLine();
@@ -51,7 +51,7 @@ public class RunApi {
 	        	}
 	        	case "2":{
 	        		if (url_c.equals("1") || url_c.equals("")){
-	        			System.out.println("-------------------------");
+	        			System.out.println("--------------------------------------");
 	        	        for(int i = 0; i < ApiList.length; i++) {
 	        	        	String name = ApiList[i].getName();
 	        	            System.out.println(i + " : "+name.substring(0, name.lastIndexOf('.')));
@@ -83,7 +83,7 @@ public class RunApi {
 			        	} catch (Exception e2) {
 			        		System.out.println("Not available");	
 			        	}	
-                        System.out.println("-------------------------");
+                        System.out.println("--------------------------------------");
 	        		} else {
 	        			System.out.println("Base URL API test case isn't available!");
 	        		}
@@ -91,7 +91,7 @@ public class RunApi {
 	        	}
 	        	case "3":{
 	        		if (url_c.equals("1") || url_c.equals("")) {
-	        			System.out.println("-------------------------");
+	        			System.out.println("--------------------------------------");
 	        	        for(int i = 0; i < ApiList.length; i++) {
 	        	        	String name = ApiList[i].getName();
 	        	            System.out.println(i + " : "+name.substring(0, name.lastIndexOf('.')));
@@ -119,7 +119,7 @@ public class RunApi {
 	        		break;
 	        	}
 	        	case "0":{
-	        		System.out.println("GoodBye");
+	        		System.out.println("GoodBye! Thank you for using our services (^v^)");
 	        		break;
 	        	}
 	        	default:{
