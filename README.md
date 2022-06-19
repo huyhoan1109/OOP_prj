@@ -1,7 +1,7 @@
 ## Các bước cài đặt 
 # Tiến hành
 - Cài đặt eclipse 
-- Tùy chỉnh dependencies qua apache Maven của eclipse (file pom)
+- Tùy chỉnh dependencies qua apache Maven của eclipse (file pom.xml)
 - Tiến hành run src/test/java/RunApi.java để  chạy các kiểm thử 
 
 ## Tự động kiểm thử  bằng Junit 
