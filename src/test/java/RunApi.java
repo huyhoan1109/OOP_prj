@@ -1,14 +1,10 @@
 import Utils.RestUtil;
-import junit.framework.*;
-
 import java.io.File;
 import java.io.FileFilter;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.Scanner;
 
-import org.junit.platform.launcher.LauncherDiscoveryRequest;
-import org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder;
 import org.junit.runner.*;
 
 public class RunApi {
@@ -23,8 +19,8 @@ public class RunApi {
     });
     @SuppressWarnings({ "resource", "unused" })
 	public static void main(String... args) throws ClassNotFoundException {
-    	String choice = "";
     	String url_c = "";
+    	String choice = "";
         do {
         	System.out.println("-------------------------");
         	System.out.println("1: Load baseUrl");
