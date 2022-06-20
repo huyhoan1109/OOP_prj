@@ -6,7 +6,7 @@
 # Tự động kiểm thử  bằng Junit 
 ## Test 1 api
 - Vào đường dẫn  src/test/java/Api/Base.java
-- Bỏ comment '''//api.setBaseURL(); ''' ở method initT và '''//api.resetBaseURL(); ''' ở method endT
+- Bỏ dấu comment '''//api.setBaseURL(); ''' ở method initT và '''//api.resetBaseURL(); ''' ở method endT
 - Tùy chọn 1 trong các api còn lại để tiến hành kiểm thử
 - Run file để  kiểm thử 
 
